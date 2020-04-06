@@ -29,4 +29,4 @@ before_script:
 
 script:
   - phpunit -c tests --coverage-clover=clover.xml --log-junit junit.xml
-  - sonar-scanner
+  - sonar-scanner -X
