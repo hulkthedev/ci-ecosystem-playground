@@ -23,7 +23,7 @@ before_script:
   - travis_retry composer self-update
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
   - travis login
-  - travis encrypt 54daf9510c506a7c0c7d9498deb802b4b54e0ce5
+  - travis encrypt dbfa02ff2cfd447adeb53318eb7288793414d636 --add
 
 script:
   - phpunit -c tests --coverage-clover=clover.xml --log-junit junit.xml
