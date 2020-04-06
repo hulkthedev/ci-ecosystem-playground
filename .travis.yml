@@ -14,8 +14,7 @@ git:
 addons:
   sonarcloud:
     organization: "hulkthedev"
-    token:
-      secure: ${SONAR_TOKEN}
+    token: ${SONAR_TOKEN}
 
 before_script:
   - travis_retry composer self-update
