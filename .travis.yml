@@ -13,15 +13,15 @@ addons:
   sonarcloud:
     organization: "hulkthedev"
     token:
-      secure: eb1cce0c91d60c5c6c82f69e86d265d6a54deec8
+      secure: 54daf9510c506a7c0c7d9498deb802b4b54e0ce5
 git:
   depth: false
 
 before_script:
   - travis_retry composer self-update
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
+  - travis encrypt 54daf9510c506a7c0c7d9498deb802b4b54e0ce5
 
 script:
   - phpunit -c tests --coverage-clover=clover.xml --log-junit junit.xml
-  - travis encrypt 54daf9510c506a7c0c7d9498deb802b4b54e0ce5
   - sonar-scanner
