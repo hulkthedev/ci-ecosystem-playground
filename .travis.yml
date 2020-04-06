@@ -12,8 +12,8 @@ cache:
 addons:
   sonarcloud:
     organization: "hulkthedev"
-    token:
-      secure: 54daf9510c506a7c0c7d9498deb802b4b54e0ce5
+#    token:
+#      secure: 54daf9510c506a7c0c7d9498deb802b4b54e0ce5
 git:
   depth: false
 
