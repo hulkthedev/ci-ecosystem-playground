@@ -17,15 +17,10 @@ addons:
     token:
       secure: ${SONAR_TOKEN}
 
-#install:
-#  - gem install travis
-
 before_script:
   - travis_retry composer self-update
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
-#  - travis login
-#  - travis encrypt ENCRYPTED_TOKEN=dbfa02ff2cfd447adeb53318eb7288793414d636 --add
-#  - echo $ENCRYPTED_TOKEN
+  - echo ${SONAR_TOKEN}
 
 script:
   - phpunit -c tests --coverage-clover=clover.xml --log-junit junit.xml
