@@ -15,7 +15,7 @@ addons:
   sonarcloud:
     organization: "hulkthedev"
     token:
-      secure: dbfa02ff2cfd447adeb53318eb7288793414d636
+      secure: 8104e369626a22af4270704ad559bc5973212b09
 
 #install:
 #  - gem install travis
