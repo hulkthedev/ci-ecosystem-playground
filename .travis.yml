@@ -20,8 +20,8 @@ install:
   - gem install travis
 
 before_script:
-  - travis_retry composer self-update
-  - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
+#  - travis_retry composer self-update
+#  - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
   - travis login
   - travis encrypt dbfa02ff2cfd447adeb53318eb7288793414d636 --add
 
