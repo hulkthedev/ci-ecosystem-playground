@@ -16,4 +16,5 @@ install:
 
 before_script:
   - travis login
-  - travis encrypt dbfa02ff2cfd447adeb53318eb7288793414d636 --add
+#  - travis encrypt ENCRYPTED_TOKEN=dbfa02ff2cfd447adeb53318eb7288793414d636 --add
+#  - echo $ENCRYPTED_TOKEN
