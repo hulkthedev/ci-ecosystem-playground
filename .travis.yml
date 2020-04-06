@@ -15,17 +15,13 @@ addons:
   sonarcloud:
     organization: "hulkthedev"
     token:
-      secure: ${SONAR_TOKEN}
+      secure: $SONAR_TOKEN
 
 before_script:
   - travis_retry composer self-update
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
-  - echo ${SONAR_TOKEN}
-  - echo {$SONAR_TOKEN}
   - echo $SONAR_TOKEN
-  - echo $TESTING
-  - echo TESTING
 
 script:
   - phpunit -c tests --coverage-clover=clover.xml --log-junit junit.xml
-  - sonar-scanner -Dsonar.login=${SONAR_TOKEN} -X
+  - sonar-scanner -Dsonar.login=$SONAR_TOKEN -X
