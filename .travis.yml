@@ -21,6 +21,10 @@ before_script:
   - travis_retry composer self-update
   - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
   - echo ${SONAR_TOKEN}
+  - echo {$SONAR_TOKEN}
+  - echo $SONAR_TOKEN
+  - echo $TESTING
+  - echo TESTING
 
 script:
   - phpunit -c tests --coverage-clover=clover.xml --log-junit junit.xml
