@@ -1,9 +1,0 @@
-version: '3'
-services:
-  ci_playground:
-    image: ci_playground:latest
-    build:
-        context: .
-    volumes:
-      - .:/var/www/html
-      - ./config/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini

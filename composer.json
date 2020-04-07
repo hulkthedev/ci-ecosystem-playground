@@ -1,9 +1,14 @@
 {
   "name": "ci_playground",
-  "version": "1.0.0",
+  "version": "1.0",
   "type": "project",
   "license": "MIT",
-  "description": "Simple CI Playground*",
+  "description": "Simple playground for travis and sonarcloud",
+  "authors": [{
+    "name": "~albei",
+    "email": "fatal.error.27@gmail.com",
+    "role": "developer"
+  }],
   "config": {
     "http-basic": {},
     "preferred-install": {

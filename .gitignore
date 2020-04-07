@@ -1,7 +1,3 @@
 .idea/
 vendor/
-
-junit.xml
-clover.xml
 composer.lock
-/tests/.phpunit.result.cache
